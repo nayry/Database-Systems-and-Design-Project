@@ -13,8 +13,8 @@
 <body class="well">
 
 <h1 align = "center"><font color="#FF2D00">SunnySports</h1>
-
-<form class="" action="/CodeIgniter/index.php/SunnySports/search" method="post">
+<br>
+<form align="center" action="/CodeIgniter/index.php/SunnySports/search" method="post">
 &nbsp;  <input type="text" name="search" value="" class="btn-default">
   <input type="submit" name="" value="search" class="btn btn-primary">
 </form>

@@ -8,14 +8,14 @@
     <?php
     $dbhost="localhost";
     $dbuser="root";
-    $dbpass="";
+    $dbpass="12345";
     $dbname="ast20401";
-    $connection=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+    $connection = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die($connection->error);
     $sql_string =
     "SELECT * FROM sessions NATURAL JOIN formats NATURAL JOIN venues NATURAL JOIN cities NATURAL JOIN sports
     NATURAL JOIN levels NATURAL JOIN sessions_organizers NATURAL JOIN organizers
     NATURAL JOIN sessions_trainers NATURAL JOIN trainers
-    WHERE  (DATEDIFF(NOW(), Date) < 0) AND (Session_Title LIKE '%". $_POST["search"] .
+    WHERE (Session_Title LIKE '%". $_POST["search"] .
     "%' OR trainer_name LIKE '%". $_POST["search"] .
     "%' OR organizer_name LIKE '%". $_POST["search"] .
     "%' OR long_description LIKE '%". $_POST["search"] .

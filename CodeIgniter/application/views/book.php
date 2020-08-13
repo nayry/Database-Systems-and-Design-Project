@@ -8,7 +8,7 @@
     <?php
     $dbhost="localhost";
     $dbuser="root";
-    $dbpass="";
+    $dbpass="12345";
     $dbname="ast20401";
     $connection=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
     $sql_string =

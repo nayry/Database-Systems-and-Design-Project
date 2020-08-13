@@ -64,7 +64,6 @@ class SunnySports extends CI_Controller {
 				$sql_query = $this->db->query($sql_string);
 				$data["query_listing"] = $sql_query;
 
-				$this->load->view('HomePage', $data);
         $this->load->view('sports_listing', $data);
 
   }
